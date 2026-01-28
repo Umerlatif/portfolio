@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,9 +13,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* ================= MOBILE MEDIA QUERIES ================= */
+    @media (max-width: 768px) {
+
+      /* Fix horizontal scroll */
+      body {
+        overflow-x: hidden;
+      }
+
+      /* Reduce section padding on mobile */
+      section {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+      }
+
+      /* Hero heading resize */
+      h2 {
+        font-size: 2.2rem !important;
+        line-height: 1.3 !important;
+      }
+
+      /* Section headings resize */
+      h3 {
+        font-size: 1.8rem !important;
+      }
+
+      /* Paragraph text resize */
+      p {
+        font-size: 0.95rem;
+      }
+
+      /* Profile image resize */
+      #about img {
+        width: 160px !important;
+        height: 160px !important;
+      }
+
+      /* Card padding fix */
+      .p-6 {
+        padding: 1rem !important;
+      }
+
+      /* Grid fix for projects & skills */
+      .grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
   </style>
 </head>
+
 <body class="bg-gray-50 text-gray-900">
 
   <!-- Navbar -->
@@ -41,10 +92,12 @@
       I build fast, secure, and scalable web applications and custom WordPress solutions for businesses and startups.
     </p>
     <div class="mt-8 flex flex-wrap gap-4">
-      <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 hover:scale-105 transform transition">
+      <a href="#projects"
+        class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 hover:scale-105 transform transition">
         View Projects
       </a>
-      <a href="#contact" class="border border-gray-300 px-6 py-3 rounded-lg shadow hover:bg-gray-100 hover:scale-105 transform transition">
+      <a href="#contact"
+        class="border border-gray-300 px-6 py-3 rounded-lg shadow hover:bg-gray-100 hover:scale-105 transform transition">
         Contact Me
       </a>
     </div>
@@ -55,19 +108,23 @@
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       <!-- Profile Image -->
       <div class="flex justify-center">
-        <img src="don.jpg" alt="Umar Latif" class="w-64 h-64 rounded-full shadow-xl hover:scale-105 transform transition"/>
+        <img src="don.jpg" alt="Umar Latif"
+          class="w-64 h-64 rounded-full shadow-xl hover:scale-105 transform transition" />
       </div>
       <!-- About Content -->
       <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
         <h3 class="text-3xl font-semibold mb-6">About Me</h3>
         <p class="text-gray-700 mb-6 leading-relaxed">
-          I am a Full Stack Web Developer and WordPress Specialist with experience in building scalable web applications and custom WordPress solutions. I focus on clean code, performance optimization, and user-centered design.
+          I am a Full Stack Web Developer and WordPress Specialist with experience in building scalable web applications
+          and custom WordPress solutions. I focus on clean code, performance optimization, and user-centered design.
         </p>
         <div class="flex gap-4 flex-wrap">
-          <a href="Umar_Latif_CV.pdf" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 shadow transition transform hover:scale-105">
+          <a href="Umar_Latif_CV.pdf" target="_blank"
+            class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 shadow transition transform hover:scale-105">
             CV
           </a>
-          <a href="#contact" class="border border-gray-300 px-6 py-3 rounded-lg hover:bg-gray-100 shadow transition transform hover:scale-105">
+          <a href="#contact"
+            class="border border-gray-300 px-6 py-3 rounded-lg hover:bg-gray-100 shadow transition transform hover:scale-105">
             Contact Me
           </a>
         </div>
@@ -82,8 +139,13 @@
       <div class="grid md:grid-cols-4 gap-6">
 
         <!-- Frontend -->
-        <div class="bg-white p-6 rounded-xl border border-transparent shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:-translate-y-1 cursor-pointer flex items-center gap-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0L1.605 5.25v13.5L12 24l10.395-5.25V5.25L12 0zm0 22.143L3.39 17.64V6.36L12 2.857l8.61 3.503v11.28L12 22.143zM12 5.143l-6.545 2.143v.018L12 8.32l6.545-1.016v-.017L12 5.143zm0 3.393v2.857h4.75v-1.518H12v-1.339zm0 3.214v2.857h4.75v-1.518H12v-1.339z"/></svg>
+        <div
+          class="bg-white p-6 rounded-xl border border-transparent shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:-translate-y-1 cursor-pointer flex items-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-orange-500" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 0L1.605 5.25v13.5L12 24l10.395-5.25V5.25L12 0zm0 22.143L3.39 17.64V6.36L12 2.857l8.61 3.503v11.28L12 22.143zM12 5.143l-6.545 2.143v.018L12 8.32l6.545-1.016v-.017L12 5.143zm0 3.393v2.857h4.75v-1.518H12v-1.339zm0 3.214v2.857h4.75v-1.518H12v-1.339z" />
+          </svg>
           <div>
             <h4 class="font-semibold mb-1 hover:text-blue-600">Frontend</h4>
             <p class="text-gray-600 text-sm">HTML, CSS, JS, jQuery, Tailwind, Laravel</p>
@@ -91,8 +153,13 @@
         </div>
 
         <!-- Backend -->
-        <div class="bg-white p-6 rounded-xl border border-transparent shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:-translate-y-1 cursor-pointer flex items-center gap-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V7a2 2 0 00-2-2H6a2 2 0 00-2 2v6m16 0v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16 0H4"/></svg>
+        <div
+          class="bg-white p-6 rounded-xl border border-transparent shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:-translate-y-1 cursor-pointer flex items-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-green-500" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20 13V7a2 2 0 00-2-2H6a2 2 0 00-2 2v6m16 0v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6m16 0H4" />
+          </svg>
           <div>
             <h4 class="font-semibold mb-1 hover:text-blue-600">Backend</h4>
             <p class="text-gray-600 text-sm">PHP, MySQL, REST APIs</p>
@@ -100,8 +167,12 @@
         </div>
 
         <!-- WordPress -->
-        <div class="bg-white p-6 rounded-xl border border-transparent shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:-translate-y-1 cursor-pointer flex items-center gap-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.375 0 0 5.375 0 12c0 6.625 5.375 12 12 12s12-5.375 12-12c0-6.625-5.375-12-12-12zm6.86 7.14l-2.15 4.02-1.44-2.7 3.59-1.32zm-6.86-2.14c1.07 0 2.1.31 2.97.84L12 6.03l-1.97-.17c.87-.53 1.9-.84 2.97-.84zm-3.77 1.16l3.59 1.32-1.44 2.7-2.15-4.02zm-2.49.51l3.37 6.33-4.19 1.54 2.82-7.87zm1.93 9.35l1.91-3.6 1.91 3.6h-3.82zm5.15 0l-1.91-3.6 1.91-3.6 1.91 3.6h-3.82zm5.3-1.53l2.82 7.87-4.19-1.54 1.37-6.33z"/></svg>
+        <div
+          class="bg-white p-6 rounded-xl border border-transparent shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:-translate-y-1 cursor-pointer flex items-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0C5.375 0 0 5.375 0 12c0 6.625 5.375 12 12 12s12-5.375 12-12c0-6.625-5.375-12-12-12zm6.86 7.14l-2.15 4.02-1.44-2.7 3.59-1.32zm-6.86-2.14c1.07 0 2.1.31 2.97.84L12 6.03l-1.97-.17c.87-.53 1.9-.84 2.97-.84zm-3.77 1.16l3.59 1.32-1.44 2.7-2.15-4.02zm-2.49.51l3.37 6.33-4.19 1.54 2.82-7.87zm1.93 9.35l1.91-3.6 1.91 3.6h-3.82zm5.15 0l-1.91-3.6 1.91-3.6 1.91 3.6h-3.82zm5.3-1.53l2.82 7.87-4.19-1.54 1.37-6.33z" />
+          </svg>
           <div>
             <h4 class="font-semibold mb-1 hover:text-blue-600">WordPress</h4>
             <p class="text-gray-600 text-sm">Themes, Plugins, WooCommerce</p>
@@ -109,8 +180,13 @@
         </div>
 
         <!-- Tools -->
-        <div class="bg-white p-6 rounded-xl border border-transparent shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:-translate-y-1 cursor-pointer flex items-center gap-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.7 2.7l2.6 2.6a2 2 0 010 2.8l-1.2 1.2a2 2 0 01-2.8 0l-2.6-2.6m-1 4.6L2 21l5.7-1.7m0 0L21 2l-7.3 7.3z"/></svg>
+        <div
+          class="bg-white p-6 rounded-xl border border-transparent shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:-translate-y-1 cursor-pointer flex items-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-700" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M14.7 2.7l2.6 2.6a2 2 0 010 2.8l-1.2 1.2a2 2 0 01-2.8 0l-2.6-2.6m-1 4.6L2 21l5.7-1.7m0 0L21 2l-7.3 7.3z" />
+          </svg>
           <div>
             <h4 class="font-semibold mb-1 hover:text-blue-600">Tools</h4>
             <p class="text-gray-600 text-sm">Git, GitHub, Hosting</p>
@@ -122,50 +198,85 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="bg-white py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h3 class="text-3xl font-semibold mb-10">Projects</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="border rounded-xl p-6 bg-white shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-xl hover:scale-105 cursor-pointer">
+ <!-- Projects Section -->
+<section id="projects" class="bg-white py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold mb-10">Projects</h3>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Project 1 -->
+      <div
+        class="border rounded-xl bg-white shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-xl hover:scale-105 cursor-pointer overflow-hidden">
+        <img src="Screenshot (344).png" alt="WordPress Business Website"
+          class="w-full h-40 object-cover">
+        <div class="p-6">
           <h4 class="font-semibold text-lg hover:text-blue-600">WordPress Business Website</h4>
           <p class="text-gray-600 mt-2">Custom WordPress theme with optimized performance.</p>
         </div>
-        <div class="border rounded-xl p-6 bg-white shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-xl hover:scale-105 cursor-pointer">
-          <h4 class="font-semibold text-lg hover:text-blue-600">WooCommerce Store</h4>
-          <p class="text-gray-600 mt-2">Complete e-commerce solution with payment integration.</p>
-        </div>
-        <div class="border rounded-xl p-6 bg-white shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-xl hover:scale-105 cursor-pointer">
+      </div>
+
+    
+
+      <!-- Project 3 -->
+      <div
+        class="border rounded-xl bg-white shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-xl hover:scale-105 cursor-pointer overflow-hidden">
+        <img src="Screenshot (200).png" alt="Full Stack Web App"
+          class="w-full h-40 object-cover">
+        <div class="p-6">
           <h4 class="font-semibold text-lg hover:text-blue-600">Full Stack Web App</h4>
           <p class="text-gray-600 mt-2">CRUD application with authentication and database.</p>
         </div>
-        <div class="border rounded-xl p-6 bg-white shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-xl hover:scale-105 cursor-pointer">
+      </div>
+
+      <!-- Project 4 -->
+      <div
+        class="border rounded-xl bg-white shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-xl hover:scale-105 cursor-pointer overflow-hidden">
+        <img src="Screenshot (342).png" alt="SKANS Official Website"
+          class="w-full h-40 object-cover">
+        <div class="p-6">
           <h4 class="font-semibold text-lg hover:text-blue-600">SKANS Official Website</h4>
-          <p class="text-gray-600 mt-2">Official WordPress website with modern design and responsive layout.</p>
-        </div>
-        <div class="border rounded-xl p-6 bg-white shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-xl hover:scale-105 cursor-pointer">
-          <h4 class="font-semibold text-lg hover:text-blue-600">OSMS Business Website</h4>
-          <p class="text-gray-600 mt-2">Full business website with database integration, user management, and live chat box.</p>
+          <p class="text-gray-600 mt-2">Official WordPress website with modern design.</p>
         </div>
       </div>
+
+      <!-- Project 5 -->
+      <div
+        class="border rounded-xl bg-white shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-xl hover:scale-105 cursor-pointer overflow-hidden">
+        <img src="Screenshot (341).png" alt="OSMS Business Website"
+          class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h4 class="font-semibold text-lg hover:text-blue-600">OSMS Business Website</h4>
+          <p class="text-gray-600 mt-2">Business website with database & live chat.</p>
+        </div>
+      </div>
+
+     
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Education Section -->
   <section id="education" class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <h3 class="text-3xl font-semibold mb-12">Education</h3>
       <div class="space-y-8">
-        <div class="bg-white p-6 rounded-xl shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-lg border">
+        <div
+          class="bg-white p-6 rounded-xl shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-lg border">
           <h4 class="text-xl font-semibold">Bachelor of Computer Science</h4>
           <p class="text-gray-700 mt-1">University of Lahore</p>
           <p class="text-gray-500 text-sm mt-1">2023 (Ongoing)</p>
-          <p class="text-gray-600 mt-3">Focus on web development, databases, software engineering, and modern full stack technologies.</p>
+          <p class="text-gray-600 mt-3">Focus on web development, databases, software engineering, and modern full stack
+            technologies.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-lg border">
+        <div
+          class="bg-white p-6 rounded-xl shadow transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:shadow-lg border">
           <h4 class="text-xl font-semibold">Diploma in Web Development</h4>
           <p class="text-gray-700 mt-1">SKANS Institute</p>
           <p class="text-gray-500 text-sm mt-1">2025</p>
-          <p class="text-gray-600 mt-3">Hands-on training in HTML, CSS, JavaScript, WordPress, and backend fundamentals.</p>
+          <p class="text-gray-600 mt-3">Hands-on training in HTML, CSS, JavaScript, WordPress, and backend fundamentals.
+          </p>
         </div>
       </div>
     </div>
@@ -176,13 +287,16 @@
     <div class="max-w-6xl mx-auto px-6">
       <h3 class="text-3xl font-semibold mb-6">Contact</h3>
       <p class="text-gray-600 mb-4">Let’s work together.</p>
-      <p>Email: <a href="mailto:umarlatif896@gmail.com" class="text-blue-600 hover:underline">umarlatif896@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/umarlatif" class="text-blue-600 hover:underline">github.com/umarlatif</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/umar-latif-430582379" class="text-blue-600 hover:underline">linkedin.com/in/umarlatif</a></p>
+      <p>Email: <a href="mailto:umarlatif896@gmail.com" class="text-blue-600 hover:underline">umarlatif896@gmail.com</a>
+      </p>
+      <p>GitHub: <a href="https://github.com/umarlatif" class="text-blue-600 hover:underline">github.com/umarlatif</a>
+      </p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/umar-latif-430582379"
+          class="text-blue-600 hover:underline">linkedin.com/in/umarlatif</a></p>
       <p>Phone: <span class="text-gray-700">+92 310 4705946</span></p>
     </div>
   </section>
 
 </body>
-</html>
 
+</html>
